@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/maguiscrop.png" alt="">
+        </div>
+        <nav id="main-nav">
+            <ul id="nav-list">
+                <li>
+                    <a href="#saladas">Recetas Saladas</a>
+                </li>
+                <li>
+                    <a href="#dulces">Recetas Dulces</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign in/Sign Up</a>
+                </li>  
+            </ul>
+        </nav>
+    </header>
+    <main id="form">
+		<form action="mailto:mail@mail.com?Subject=Contacto Nuevo" method="POST" id="form">
+			<div class="campos" >
+				Nombre y Apellido <br> <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
+			</div>
+			<div class="campos">
+				E-mail <br> <input type="mail" name="Mail" id="" placeholder="mail@mail.com" required>	
+            </div>
+            <div>
+                Password <br> <input type="password" name="Password" placeholder="Password" required>
+            </div>
+			<div class="campos">
+				Adress <br> <input type="text" name="Adress" placeholder="Adress" required>
+			</div>
+			<div class="campos">
+				Phone Number <br> <input type="tel" name="Phone Number" placeholder="+(AreaCode) 5555 5555" required>
+			</div>
+			<div id="submit">
+				<a href="index.html"><input type="submit" value="Submit"></a> 
+			</div>
+			
+
+        </form>	
+    </main>
+</body>
+</html>
