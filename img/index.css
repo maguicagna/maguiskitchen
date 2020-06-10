@@ -1,0 +1,113 @@
+*{margin: 0;padding: 0;}
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+   background-color: rgba(255, 255, 255);
+   position: sticky;
+   top: 0%;
+   
+        
+   
+
+
+}
+img{
+    padding-top: 2%;
+    padding-left: 1%;
+    box-sizing: border-box;
+    color:rgb(165, 101, 165);
+    
+
+}
+#main-nav{
+    width: 30%;
+    text-align: right;
+    
+    
+    
+
+    }
+    #nav-list{
+        display: flex;
+            justify-content: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        list-style-type: none;
+        
+        
+    }
+    /* Escribo asi para que lo que yo le eplique a "LI" sea solo a los li dentro del nav list
+    Para que si vuelvo a trabajar con li en la pag no hereden estas caracteristicas */
+
+    #nav-list li a{
+        display: block;
+        background-color: plum;
+        padding: 10px;
+        color: #800080;
+        text-align: center;
+        box-sizing: border-box;
+    
+    }
+    #nav-list li a:hover{
+        background-color: purple;
+        color: #dda1dd;
+    }
+section{
+    padding: 1%;
+    color: #6b636b;
+}
+.back{
+    color: purple;
+
+}
+#ingreso{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-recetas{
+    position: relative;
+}
+#contenedor{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-around;
+    
+    
+
+}
+#recetas{
+    width: 50%;
+    padding-left: 1%;
+    text-align: justify;
+}
+
+#recetas div{
+    margin-left: 2%;
+}
+
+#recetas li{
+    margin-left: 2%;
+}
+#tartabroc{
+
+}
+#tartabroc:hover{
+    
+}
+h4{
+    text-decoration: underline;
+}
