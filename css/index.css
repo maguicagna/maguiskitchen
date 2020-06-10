@@ -6,6 +6,10 @@ header{
    background-color: rgba(255, 255, 255);
    position: sticky;
    top: 0%;
+   
+        
+   
+
 
 }
 img{
@@ -17,13 +21,21 @@ img{
 
 }
 #main-nav{
-    width: 100%;
+    width: 30%;
     text-align: right;
+    
+    
+    
+
     }
     #nav-list{
-        list-style-type: none;
         display: flex;
-        justify-content: flex-end;
+            justify-content: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        list-style-type: none;
+        
+        
     }
     /* Escribo asi para que lo que yo le eplique a "LI" sea solo a los li dentro del nav list
     Para que si vuelvo a trabajar con li en la pag no hereden estas caracteristicas */
@@ -32,14 +44,14 @@ img{
         display: block;
         background-color: plum;
         padding: 10px;
-        color: purple;
+        color: #800080;
         text-align: center;
         box-sizing: border-box;
     
     }
     #nav-list li a:hover{
         background-color: purple;
-        color: plum;
+        color: #dda1dd;
     }
 section{
     padding: 1%;
@@ -64,11 +76,15 @@ section{
     position: relative;
 }
 #contenedor{
-    width: 90%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-around;
     
     
 
