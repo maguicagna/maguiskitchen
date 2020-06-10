@@ -2,37 +2,55 @@
 html{
     font-family: 'Quicksand', sans-serif;
 }
+body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 header{
    background-color: rgba(255, 255, 255);
    position: sticky;
    top: 0%;
-   
-        
-   
 
 
 }
-img{
-    padding-top: 2%;
+#encabezado{
+    display: flex;
+        flex-wrap: wrap;
+    
+
+}
+.logo{
+    
     padding-left: 1%;
     box-sizing: border-box;
     color:rgb(165, 101, 165);
     
+    
+    
 
 }
 #main-nav{
-    width: 30%;
+    width: 100%;
+    display: flex;
+            justify-content: flex-end;
+
     text-align: right;
+    
+    
     
     
     
 
     }
     #nav-list{
+        width: 32%;
         display: flex;
-            justify-content: flex-end;
+            
+            
             justify-content: space-between;
-            flex-wrap: wrap;
+
+        
         list-style-type: none;
         
         
@@ -42,6 +60,7 @@ img{
 
     #nav-list li a{
         display: block;
+        
         background-color: plum;
         padding: 10px;
         color: #800080;
@@ -54,8 +73,13 @@ img{
         color: #dda1dd;
     }
 section{
+    
     padding: 1%;
     color: #6b636b;
+}
+#info p{
+    text-align: justify;
+    margin-top: 10px;
 }
 .back{
     color: purple;
@@ -76,7 +100,7 @@ section{
     position: relative;
 }
 #contenedor{
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -84,7 +108,7 @@ section{
     display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content:space-around;
+        justify-content:space-between;
     
     
 
