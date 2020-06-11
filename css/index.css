@@ -55,6 +55,7 @@ header{
         
         
     }
+   
     /* Escribo asi para que lo que yo le eplique a "LI" sea solo a los li dentro del nav list
     Para que si vuelvo a trabajar con li en la pag no hereden estas caracteristicas */
 
@@ -126,12 +127,44 @@ section{
 #recetas li{
     margin-left: 2%;
 }
-#tartabroc{
-
-}
-#tartabroc:hover{
-    
-}
+  
 h4{
     text-decoration: underline;
 }
+/* Media Queries */
+/* XL */
+@media screen and (min-width: 1301px) {
+
+}
+/* Large - Desktop */
+@media screen and (min-width: 990px) and (max-width:1300px){
+
+}
+/* Medium */
+@media screen and (max-width:989px) and (min-width:580px){
+    body{
+        width:100%;
+    }
+    #contenedor{
+        width:100%;
+        padding: 1%;
+        box-sizing: border-box;
+        display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-between;
+    }
+    .recetas{
+        width: 22%;
+    }
+
+}
+/* Small */
+@media screen and (max-width:579px) and (min-width:580px) {
+    body{
+        width:100%
+    }
+
+}
+
+
