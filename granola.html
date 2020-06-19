@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png">
     <title>Granola Casera</title>
+    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
 </head>
-<body>
+<body class="container-fluid">
     <header id="nav-recetas">
         <div class="logo">
             <a href="index.html"><img src="img/maguiscrop.png" alt=""></a>        
@@ -16,50 +19,52 @@
         <nav id="main-nav">
             <ul id="nav-list">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html" class="btn">Inicio</a>
                 </li>
                 <li>
-                    <a href="index.html#saladas">Recetas Saladas</a>
+                    <a href="index.html#saladas" class="btn">Recetas Saladas</a>
                 </li>
                 <li>
-                    <a href="index.html#dulces">Recetas Dulces</a>
+                    <a href="index.html#dulces" class="btn">Recetas Dulces</a>
                 </li>
                 <li>
-                    <a href="signin.html">Sign in</a>
-                </li>  
+                    <a href="signin.html" class="btn">Sign in</a>
+                </li> 
             </ul>
         </nav>
     </header>
-    <section id="recetas">
-        <h2>Granola Casera.</h2>
-        <p>SUPER CROCANTE. Es una cantidad abundante, a mi me dura como un mes pero como yo sola. Pueden duplicar o recortar a la mitad los
-        ingredientes y queda perfecto o tambien hacerla toda y freezar un poco.
-        </p><br>
-        <h3>Ingredientes.</h3>
-        <p>Aclaración: No importa que tipo de taza o recipiente usen para medir, lo importante es usar siempre el mismo para que
-        queden bien las proporciones.
-        </p><br>
-        <ul>
-            <li>3 tazas de Avena.</li>
-            <li>1 taza de copos (pueden ser de trigo, de arroz, de quinoa).</li>
-            <li>1/2 taza de almendras.</li>
-            <li>1/2 taza de nueces. (yo uso esos frutos secos pero pueden elegir los que mas les gusten).</li>
-            <li>1/2 taza mix de semillas.</li>
-            <li>3/4 tazas de miel.</li>
-            <li>1 cucharadita de te de esencia de vainilla.</li>
-        </ul><br>
-        <h3>Procediemiento</h3>
-        <ol>
-            <li>Precalentamos el horno a 150ºC</li>
-            <li>Picamos los frutos secos</li>
-            <li>Mezclamos todos los ingredientes secos en un bowl grande</li>
-            <li>Vertemos la miel y esencia de vainilla en el bowl.</li>
-            <li>Mezclamos intentando alcanzar con la miel toda la avena y frutos secos. Queda una pasta/engrudo super pegagosa y medio dificil de maniobrar pero esta perfecto. </li>
-            <li>Ponemos la mezcla en un recipiente para horno previamente forrado con aluminio o pad de silicona.</li>
-            <li>Llevamos al horno y cada 10-15 minutos vamos a revolver/mover un poco con espatula. Repetimos 4 veces aprox, hasta que este doradita.</li>
-            <li>Retiramos del horno y dejamos enfriar (IMPORTANTE para que se ponga crocante).</li>
-            <li>Guardamos en frascos de vidrio o tuppers herméticos</li>
-        </ol>
+    <section class="row" id="recetas">
+        <div class="col-lg-6">
+            <h2>Granola Casera.</h2>
+            <p>SUPER CROCANTE. Es una cantidad abundante, a mi me dura como un mes pero como yo sola. Pueden duplicar o recortar a la mitad los
+            ingredientes y queda perfecto o tambien hacerla toda y freezar un poco.
+            </p><br>
+            <h3>Ingredientes.</h3>
+            <p>Aclaración: No importa que tipo de taza o recipiente usen para medir, lo importante es usar siempre el mismo para que
+            queden bien las proporciones.
+            </p><br>
+            <ul>
+                <li>3 tazas de Avena.</li>
+                <li>1 taza de copos (pueden ser de trigo, de arroz, de quinoa).</li>
+                <li>1/2 taza de almendras.</li>
+                <li>1/2 taza de nueces. (yo uso esos frutos secos pero pueden elegir los que mas les gusten).</li>
+                <li>1/2 taza mix de semillas.</li>
+                <li>3/4 tazas de miel.</li>
+                <li>1 cucharadita de te de esencia de vainilla.</li>
+            </ul><br>
+            <h3>Procediemiento</h3>
+            <ol>
+                <li>Precalentamos el horno a 150ºC</li>
+                <li>Picamos los frutos secos</li>
+                <li>Mezclamos todos los ingredientes secos en un bowl grande</li>
+                <li>Vertemos la miel y esencia de vainilla en el bowl.</li>
+                <li>Mezclamos intentando alcanzar con la miel toda la avena y frutos secos. Queda una pasta/engrudo super pegagosa y medio dificil de maniobrar pero esta perfecto. </li>
+                <li>Ponemos la mezcla en un recipiente para horno previamente forrado con aluminio o pad de silicona.</li>
+                <li>Llevamos al horno y cada 10-15 minutos vamos a revolver/mover un poco con espatula. Repetimos 4 veces aprox, hasta que este doradita.</li>
+                <li>Retiramos del horno y dejamos enfriar (IMPORTANTE para que se ponga crocante).</li>
+                <li>Guardamos en frascos de vidrio o tuppers herméticos</li>
+            </ol>
+        </div>
     </section>
     
 </body>

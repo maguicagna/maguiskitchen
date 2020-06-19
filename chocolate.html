@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png">
     <title>Chocolate Amargo con Almedras</title>
+    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
 </head>
-<body>
+<body class="container-fluid">
     <header id="nav-recetas">
         <div class="logo">
             <a href="index.html"><img src="img/maguiscrop.png" alt=""></a>
@@ -16,47 +19,49 @@
         <nav id="main-nav">
             <ul id="nav-list">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html" class="btn">Inicio</a>
                 </li>
                 <li>
-                    <a href="index.html#saladas">Recetas Saladas</a>
+                    <a href="index.html#saladas" class="btn">Recetas Saladas</a>
                 </li>
                 <li>
-                    <a href="index.html#dulces">Recetas Dulces</a>
+                    <a href="index.html#dulces" class="btn">Recetas Dulces</a>
                 </li>
                 <li>
-                    <a href="signin.html">Sign in</a>
+                    <a href="signin.html" class="btn">Sign in</a>
                 </li>  
             </ul>
         </nav>
     </header>
-    <section id="recetas">
-        <h2>Barra de Chocolate.</h2>
-        <p>Esto dificilmente se puede llamar receta pero es ideal para tener algo dulce para comer antes de ir a dormir, o en cualquier momento.
-        Es mi chocolate favorito pero en argentina no es tan popular y es muy dificil conseguirlo y si llegas a encontrar es de marcas importadas
-        entonces termina siendo mucho mas economico hacerlo en casa. Es tan pero tan facil que les va a encantar.
-        </p><br>
-        <h3>Ingredientes.</h3>
-        <ul>
-            <li>200 gr de Chocolate Amargo 80% (yo uso fenix)</li>
-            <li>40 gr de Almendras.</li>
-            <li>Sal entrefina c/n. (MUUUUY POQUITO. Puede ser marina o del himalaya también).</li>
-            <li>Un molde de silicona.</li>
-        </ul><br>
-        <h3>Procedimiento</h3>
-        <ol>
-            <li>Picamos las almendras pero que queden pedazos relativamente grandes. Cortarlas en 4 es mas que suficiente.</li>
-            <li>Llevamos las almendras picadas a una sarten con fuego bien al mínimo para tostarlas (puede ser al horno tambien). Ojo que no se quemen por que se hacen en dos segundos</li>
-            <li>Mientras picamos el chocolate en pedazos y lo llevamos al microondas en un recipiente apto. Calentamos de a 10 segundos en potencia máxima. (También lo pueden hacer a baño maría).</li>
-                <ul>
-                    <li>Paciencia! este paso es importantisimo hacerlo asi para que no se queme el chocolate. Va a parecer que no se derrite mas pero a medida que vayan revolviendo con un tenedor, van a ver que si.</li>
-                </ul>
-            <li>Una vez que tenemos el chocolate derretido y las almendras tostadas, integramos las almendras al chocolate.</li>
-            <li>Vertemos esta mezcla en una budinera de silicona formando una capa de medio centimetro aprox. (Pueden usar de metal forrado con aluminio o papel manteca o cualquier superficie plana).</li>
-            <li>Espolvoreamos con una pizca de sal a lo largo de toda la barra.</li>
-            <li>Llevamos a la heladera hasta que se endurezca.</li>
-            <li>Desmoldamos y porcionamos en cuadraditos.</li>
-        </ol>
+    <section class="row" id="recetas">
+        <div class="col-lg-6">
+            <h2>Barra de Chocolate.</h2>
+            <p>Esto dificilmente se puede llamar receta pero es ideal para tener algo dulce para comer antes de ir a dormir, o en cualquier momento.
+            Es mi chocolate favorito pero en argentina no es tan popular y es muy dificil conseguirlo y si llegas a encontrar es de marcas importadas
+            entonces termina siendo mucho mas economico hacerlo en casa. Es tan pero tan facil que les va a encantar.
+            </p><br>
+            <h3>Ingredientes.</h3>
+            <ul>
+                <li>200 gr de Chocolate Amargo 80% (yo uso fenix)</li>
+                <li>40 gr de Almendras.</li>
+                <li>Sal entrefina c/n. (MUUUUY POQUITO. Puede ser marina o del himalaya también).</li>
+                <li>Un molde de silicona.</li>
+            </ul><br>
+            <h3>Procedimiento</h3>
+            <ol>
+                <li>Picamos las almendras pero que queden pedazos relativamente grandes. Cortarlas en 4 es mas que suficiente.</li>
+                <li>Llevamos las almendras picadas a una sarten con fuego bien al mínimo para tostarlas (puede ser al horno tambien). Ojo que no se quemen por que se hacen en dos segundos</li>
+                <li>Mientras picamos el chocolate en pedazos y lo llevamos al microondas en un recipiente apto. Calentamos de a 10 segundos en potencia máxima. (También lo pueden hacer a baño maría).</li>
+                    <ul>
+                        <li>Paciencia! este paso es importantisimo hacerlo asi para que no se queme el chocolate. Va a parecer que no se derrite mas pero a medida que vayan revolviendo con un tenedor, van a ver que si.</li>
+                    </ul>
+                <li>Una vez que tenemos el chocolate derretido y las almendras tostadas, integramos las almendras al chocolate.</li>
+                <li>Vertemos esta mezcla en una budinera de silicona formando una capa de medio centimetro aprox. (Pueden usar de metal forrado con aluminio o papel manteca o cualquier superficie plana).</li>
+                <li>Espolvoreamos con una pizca de sal a lo largo de toda la barra.</li>
+                <li>Llevamos a la heladera hasta que se endurezca.</li>
+                <li>Desmoldamos y porcionamos en cuadraditos.</li>
+            </ol>
+        </div>
     </section>
     
 </body>

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png">
     <title>2 Tipos de Cookies</title>
+    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
 </head>
-<body>
+<body class="container-fluid">
     <header id="nav-recetas">
         <div class="logo">
             <a href="index.html"><img src="img/maguiscrop.png" alt=""></a>
@@ -16,68 +19,70 @@
         <nav id="main-nav">
             <ul id="nav-list">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="index.html" class="btn">Inicio</a>
                 </li>
                 <li>
-                    <a href="index.html#saladas">Recetas Saladas</a>
+                    <a href="index.html#saladas" class="btn">Recetas Saladas</a>
                 </li>
                 <li>
-                    <a href="index.html#dulces">Recetas Dulces</a>
+                    <a href="index.html#dulces" class="btn">Recetas Dulces</a>
                 </li>
                 <li>
-                    <a href="signin.html">Sign in</a>
+                    <a href="signin.html" class="btn">Sign in</a>
                 </li>  
             </ul>
         </nav>
     </header>
-    <section id="recetas">
-        <h2>Chocolate Cookies con Frutos Secos</h2>
-        <p>(Salen 10 Galletas)</p><br>
-        <h3>Ingredientes.</h3>
-        <ul>
-            <li>100 gr Harina integral.</li>
-            <li>20 gr cacao, yo uso el fenix 100% (puede ser nesquik o algun otro).</li>
-            <li>50 gr de frutos secos (yo hago 25 gr de nueces y 25 gr de almendras).</li>
-            <li>1 cucharada de polvo para hornear.</li>
-            <li>40 gr azucar mascabo.</li>
-            <li>1 cucharadita de miel.</li>
-            <li>1 huevo.</li>
-            <li>50 gr aceite.</li>
-            <li>Esencia o extracto de vainilla. (Ojo! si usan extracto por que es mucho mas fuerte que la esencia, entonces se necesita menos cantidad).</li>
-        </ul><br>
-        <h3>Procedimiento.</h3>
-        <ol>
-            <li>Precalentamos el horno a 180ºC.</li>
-            <li>En un bowl mezclamos harina, cacao y polvo para hornear.</li>
-            <li>En otro bowl, batimos el huevo con los endulzantes y esencia de vainilla hasta que esten bien integrado y haga espumita.</li>
-            <li>Agregamos el aceite y batimos un poco mas.</li>
-            <li>Incorporamos los secos a los humedos con la ayuda de una espatula para formar la masa.</li>
-            <li>Una vez formada la masa, que queda como una pasta, incorporamos los frutos secos previamente picados.</li>
-            <li>Con la ayuda de una o dos cucharas formamos bolitas y las ponemos en una placa para horno forrada con papel manteca o pad de silicona.</li>
-            <li>Horneamos por 10-15 min.</li>
-        </ol><br>
+    <section class="row" id="recetas">
+        <div class="col-lg-6">
+            <h2>Chocolate Cookies con Frutos Secos.</h2>
+            <p>(Salen 10 Galletas)</p><br>
+            <h3>Ingredientes.</h3>
+            <ul>
+                <li>100 gr Harina integral.</li>
+                <li>20 gr cacao, yo uso el fenix 100% (puede ser nesquik o algun otro).</li>
+                <li>50 gr de frutos secos (yo hago 25 gr de nueces y 25 gr de almendras).</li>
+                <li>1 cucharada de polvo para hornear.</li>
+                <li>40 gr azucar mascabo.</li>
+                <li>1 cucharadita de miel.</li>
+                <li>1 huevo.</li>
+                <li>50 gr aceite.</li>
+                <li>Esencia o extracto de vainilla. (Ojo! si usan extracto por que es mucho mas fuerte que la esencia, entonces se necesita menos cantidad).</li>
+            </ul><br>
+            <h3>Procedimiento.</h3>
+            <ol>
+                <li>Precalentamos el horno a 180ºC.</li>
+                <li>En un bowl mezclamos harina, cacao y polvo para hornear.</li>
+                <li>En otro bowl, batimos el huevo con los endulzantes y esencia de vainilla hasta que esten bien integrado y haga espumita.</li>
+                <li>Agregamos el aceite y batimos un poco mas.</li>
+                <li>Incorporamos los secos a los humedos con la ayuda de una espatula para formar la masa.</li>
+                <li>Una vez formada la masa, que queda como una pasta, incorporamos los frutos secos previamente picados.</li>
+                <li>Con la ayuda de una o dos cucharas formamos bolitas y las ponemos en una placa para horno forrada con papel manteca o pad de silicona.</li>
+                <li>Horneamos por 10-15 min.</li>
+            </ol><br>
 
-        <h2>Cookies con chunks de Chocolate</h2>
-        <p>(Salen 10 galletas).</p><br>
-        <p>Por que "chunks" y no chips? Yo corto el chocolate en pedazos masomenos grandes por que me gusta asi pero pueden ser chips tranquilamente.</p><br>
-        <h3>Ingredientes.</h3>
-        <ul>
-            <li>120 gr Harina integral.</li>
-            <li>50 gr chunks de chocolate (yo uso fenix 80%).</li>
-            <li>1 cucharada de polvo para hornear</li>
-            <li>40 gr azucar mascabo.</li>
-            <li>Cucharadita de miel (opcional).</li>
-            <li>1 huevo.</li>
-            <li>50 gr aceite.</li>
-            <li>Esencia o extracto de vainilla.</li>
-        </ul><br>
-        <h3>Procedimiento.</h3>
-        <p>Es el mismo procedimiento que en las cookies de chocolate.</p>
+            <h2>Cookies con chunks de Chocolate.</h2>
+            <p>(Salen 10 galletas).</p><br>
+            <p>Por que "chunks" y no chips? Yo corto el chocolate en pedazos masomenos grandes por que me gusta asi pero pueden ser chips tranquilamente.</p><br>
+            <h3>Ingredientes.</h3>
+            <ul>
+                <li>120 gr Harina integral.</li>
+                <li>50 gr chunks de chocolate (yo uso fenix 80%).</li>
+                <li>1 cucharada de polvo para hornear</li>
+                <li>40 gr azucar mascabo.</li>
+                <li>Cucharadita de miel (opcional).</li>
+                <li>1 huevo.</li>
+                <li>50 gr aceite.</li>
+                <li>Esencia o extracto de vainilla.</li>
+            </ul><br>
+            <h3>Procedimiento.</h3>
+            <p>Es el mismo procedimiento que en las cookies de chocolate.</p>
+
+        </div>
 
 
-
-
-    </section>
+     </section>
+    
     
 </body>
 </html>

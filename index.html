@@ -4,27 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Magui's Kitchen</title>
-    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
+    
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body class="container-md container-fluid-sm">
     <header>
         <div id="encabezado">
-            <div class="logo">
+            <div class="logo ">
                 <a href="index.html"><img src="img/maguiscrop.png" alt=""></a>
             </div>
-            <nav id="main-nav">
-                <ul id="nav-list">
+            
+            <nav  id="main-nav">
+                <ul class="mb-1" id="nav-list">
                     <li>
-                        <a href="#saladas">Recetas Saladas</a>
+                        <a href="#saladas" class="btn">Recetas Saladas</a>
                     </li>
                     <li>
-                        <a href="#dulces">Recetas Dulces</a>
+                        <a href="#dulces" class="btn">Recetas Dulces</a>
                     </li>
                     <li>
-                        <a href="signin.html">Sign in</a>
+                        <a href="signin.html" class="btn">Sign in</a>
                     </li>  
                 </ul>
             </nav>
@@ -33,82 +39,98 @@
     </header>
 
     <section id="info">
-        <h2>About Me</h2>
-        <p>Mi nombre es Magui, soy una modelo argentina y programadora freelance. Me encanta comer y cocinar para mi y mi familia.
-        Para mi es fundamental llevar una alimentación saludable, tanto como para mi trabajo como para la vida. Intento no consumir
-        alimentos industrializados y hacer yo misma todas mis comidas. Hice este blog para compartir mis recetas e incentivarlos a
-        que ustedes también hagan sus comidas la mayor parte del tiempo para comer alimentos con ingredientes reales y que conocemos.
-        </p><br>
-        <h2>Sobre este sitio.</h2>
-            <p>Mis recetas no necesariamente son light ni bajas en calorias. Son saludables, con esto quiero decir que son de ingredientes
-            reales, no industrializados, no tienen conservantes ni cosas raras.
-            Aparte de recetas hay una sección para registrarse que te permite armar tu carrito y pedir a domicilio tus viandas semanales.
+
+            <h2>About Me</h2>
+            <p>Mi nombre es Magui, soy una modelo Argentina y programadora freelance. Me encanta comer y cocinar para mi y mi familia.
+            Para mi es fundamental llevar una alimentación saludable, tanto como para mi trabajo como para la vida. Intento no consumir
+            alimentos industrializados y hacer yo misma todas mis comidas. Hice este blog para compartir mis recetas e incentivarlos a
+            que ustedes también hagan sus comidas la mayor parte del tiempo para comer alimentos con ingredientes reales y que conocemos.
             </p>
+
+            <h2>Sobre este sitio.</h2>
+            <p>Mis recetas no necesariamente son light ni bajas en calorias. Son saludables, con esto quiero decir que son de ingredientes
+            reales, no industrializados, no tienen conservantes ni cosas raras. <br>
+            También pueden registrarse acceder a un menú de comidas mas amplio del cual van a poder seleccionar sus viandas semanales con envio a domicilio.
+            </p>
+        
+        
+        
     </section>
-    <section  id="saladas" >
-        <h2>Recetas Saladas</h2>
-            <div id="contenedor">
-                <div class="recetas">
-                    <a href="tartabroc.html"><img src="img/tartabroc.JPG" id="tartabroc" alt=""></a>
+    <section class="container" id="saladas">
+        <h2 >Recetas Saladas</h2>
+        
+            <div class="row" id="contenedor">
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                    <a href="tartabroc.html"><img src="img/tartabroc.JPG" class="img-fluid" alt=""></a>
                 </div>
-                <div class="recetas">
-                    <a href="tacos.html"><img src="img/tacos.jpg" id="tacos" alt=""></a> 
+                <div  class="col-lg-3 col-md-4 col-sm-6 recetas ">
+                    <a href="tacos.html"><img src="img/tacos.jpg" class="img-fluid" alt=""></a> 
                 </div>
-                <div class="recetas">
-                    <a href="noquis.html"><img src="img/noquis.jpg" id="noquis" alt=""></a> 
+                <div  class="col-lg-3 col-md-4 col-sm-6 recetas ">
+                    <a href="noquis.html"><img src="img/noquis.jpg" class="img-fluid" alt=""></a> 
                 </div>
-                <div class="recetas">
-                    <a href="sopa.html"><img src="img/sopa.jpg" id="sopa"  alt=""></a> 
+                <div  class="col-lg-3 col-md-4 col-sm-6 recetas ">
+                    <a href="sopa.html"><img src="img/sopa.jpg" class="img-fluid" alt=""></a> 
                 </div>
-                <div class="recetas">
-                    <a href=""><img src="img/canelones.jpg" id="sopa"  alt=""></a> 
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas ">
+                    <a href=""><img src="img/canelones.jpg" class="img-fluid" alt=""></a> 
                 </div>
-                <div class="recetas">
-                    <a href=""><img src="img/arrozpollo.jpg" id="sopa"  alt=""></a> 
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                    <a href=""><img src="img/arrozpollo.jpg" class="img-fluid" alt=""></a> 
                 </div>
-                <div class="recetas">
-                    <a href=""><img src="img/empanadas.jpg" id="sopa"  alt=""></a> 
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                    <a href=""><img src="img/empanadas.jpg" class="img-fluid" alt=""></a> 
                 </div>
-                <div class="recetas">
-                    <a href=""><img src="img/quinoa.jpg" id="sopa"  alt=""></a> 
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                    <a href=""><img src="img/quinoa.jpg" class="img-fluid" alt=""></a> 
                 </div>
                 
             </div>
+        
     </section>
 
     <section  id="dulces" >
         <h2>Recetas Dulces</h2>
-            <div id="contenedor">
-               <div class="recetas">
+            <div class="row" id="contenedor">
+               <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href="cookies.html"><img src="img/cookies.jpg" alt=""></a>
                 </div>
-                <div class="recetas">
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href="granola.html"><img src="img/granola(1).jpg" alt=""></a>
                 </div>
-                <div class="recetas">
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href="chocolate.html"><img src="img/chocolate.jpg" alt=""></a>
                 </div>
-                <div>
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href="carrot.html"><img src="img/carrot.jpg" alt=""></a>
                 </div> 
-                <div>
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href=""><img src="img/torrejas.jpg" alt=""></a>
                 </div> 
-                <div>
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href=""><img src="img/french.jpg" alt=""></a>
                 </div> 
-                <div>
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href=""><img src="img/trufas.jpg" alt=""></a>
                 </div> 
-                <div>
+                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href=""><img src="img/flan.jpg" alt=""></a>
                 </div> 
             </div>
               
-        <div>
-            <a href="#saladas" class="back">Go Back</a>
-        </div>  
+         
     </section>
-   
+    <footer class="container-md container-fluid-sm">
+        <div class="container-fluid  pie">
+            &copy; 2020 - Todos los derechos reservados
+        </div>
+    </footer>
+
+
+
+<!--JS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
