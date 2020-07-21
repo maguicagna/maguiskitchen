@@ -11,55 +11,113 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Owl Carousel
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    -->
+    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="container-md container-fluid-sm">
-    <header>
-        <div id="encabezado">
-            <div class="logo ">
-                <a href="index.html"><img src="img/maguiscrop.png" alt=""></a>
-            </div>
+<body>
+    <nav class="container navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ">
             
-            <nav  id="main-nav">
-                <ul class="mb-1" id="nav-list">
-                    <li>
-                        <a href="#saladas" class="btn">Recetas Saladas</a>
-                    </li>
-                    <li>
-                        <a href="#dulces" class="btn">Recetas Dulces</a>
-                    </li>
-                    <li>
-                        <a href="signin.html" class="btn">Sign in</a>
-                    </li>  
-                </ul>
-            </nav>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li> 
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#saladas">Recetas Saladas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dulces">Recetas Dulces</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          
         </div>
-        
-    </header>
-
-    <section id="info">
-
-            <h2>About Me</h2>
-            <p>Mi nombre es Magui, soy una modelo Argentina y programadora freelance. Me encanta comer y cocinar para mi y mi familia.
+      </nav>
+      <section class="container">
+        <h2>Info</h2>
+        <div class="row justify-content-between">
+          <div class="col-5">
+            <h4>About Me</h4>
+            <p class="articulo">Mi nombre es Magui, soy una modelo Argentina y programadora freelance. Me encanta comer y cocinar para mi y mi familia.
             Para mi es fundamental llevar una alimentación saludable, tanto como para mi trabajo como para la vida. Intento no consumir
             alimentos industrializados y hacer yo misma todas mis comidas. Hice este blog para compartir mis recetas e incentivarlos a
             que ustedes también hagan sus comidas la mayor parte del tiempo para comer alimentos con ingredientes reales y que conocemos.
             </p>
-
-            <h2>Sobre este sitio.</h2>
-            <p>Mis recetas no necesariamente son light ni bajas en calorias. Son saludables, con esto quiero decir que son de ingredientes
+          </div>            
+          <div class="col-5"> 
+            <h4>Sobre este sitio.</h4>
+            <p class="articulo">Mis recetas no necesariamente son light ni bajas en calorias. Son saludables, con esto quiero decir que son de ingredientes
             reales, no industrializados, no tienen conservantes ni cosas raras. <br>
-            También pueden registrarse acceder a un menú de comidas mas amplio del cual van a poder seleccionar sus viandas semanales con envio a domicilio.
-            </p>
-        
-        
-        
-    </section>
-    <section class="container" id="saladas">
+            También pueden registrarse para acceder a un menú de comidas más amplio del cual van a poder seleccionar sus viandas semanales congeladas con envio a domicilio.
+            Al registrarse van a encontrar mucha mas información y el paso a paso para hacer sus pedidos.
+            </p>           
+
+          </div>
+        </div>
+      </section>
+      <section class="container" id="blog">
+        <h2>Blog</h2>
+        <p>Articulos que encuentro y comparto o escribo sobre cocinar, tips y utensilios para la cocina</p>
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Reciclar comidas.</h5>
+                <p class="card-text">En este artículo doy un par de ideas de como reciclar comida que sobró.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Must have de utensilios.</h5>
+                <p class="card-text">Artículos básicos que me parecen indispensables para cualquier cocina.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section class="container" id="saladas">
         <h2 >Recetas Saladas</h2>
-        
-            <div class="row" id="contenedor">
+        <br>
+            <div class="row justify-content-between" id="contenedor">
                 <div class="col-lg-3 col-md-4 col-sm-6 recetas">
                     <a href="tartabroc.html"><img src="img/tartabroc.JPG" class="img-fluid" alt=""></a>
                 </div>
@@ -88,47 +146,42 @@
             </div>
         
     </section>
+    <br>
+    <section  class="container" id="dulces" >
+      <h2>Recetas Dulces</h2>
+      <br>
+          <div class="row justify-content-around" id="contenedor">
+             <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href="cookies.html"><img src="img/cookies.jpg" alt=""></a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href="granola.html"><img src="img/granola(1).jpg" alt=""></a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href="chocolate.html"><img src="img/chocolate.jpg" alt=""></a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href="carrot.html"><img src="img/carrot.jpg" alt=""></a>
+              </div> 
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href=""><img src="img/torrejas.jpg" alt=""></a>
+              </div> 
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href=""><img src="img/french.jpg" alt=""></a>
+              </div> 
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href=""><img src="img/trufas.jpg" alt=""></a>
+              </div> 
+              <div class="col-lg-3 col-md-4 col-sm-6 recetas">
+                  <a href=""><img src="img/flan.jpg" alt=""></a>
+              </div> 
+          </div>
+            
+       
+  </section>
 
-    <section  id="dulces" >
-        <h2>Recetas Dulces</h2>
-            <div class="row" id="contenedor">
-               <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href="cookies.html"><img src="img/cookies.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href="granola.html"><img src="img/granola(1).jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href="chocolate.html"><img src="img/chocolate.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href="carrot.html"><img src="img/carrot.jpg" alt=""></a>
-                </div> 
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href=""><img src="img/torrejas.jpg" alt=""></a>
-                </div> 
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href=""><img src="img/french.jpg" alt=""></a>
-                </div> 
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href=""><img src="img/trufas.jpg" alt=""></a>
-                </div> 
-                <div class="col-lg-3 col-md-4 col-sm-6 recetas">
-                    <a href=""><img src="img/flan.jpg" alt=""></a>
-                </div> 
-            </div>
-              
-         
-    </section>
-    <footer class="container-md container-fluid-sm">
-        <div class="container-fluid  pie">
-            &copy; 2020 - Todos los derechos reservados
-        </div>
-    </footer>
+<!--Owl Carousel JS-->
 
-
-
-<!--JS-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

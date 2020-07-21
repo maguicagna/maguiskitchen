@@ -1,55 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title> Magui's Kitchen</title>
+    
+    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Owl Carousel
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    -->
+    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/maguiscrop.png" alt="">
-        </div>
-        <nav id="main-nav">
-            <ul id="nav-list">
-                <li>
-                    <a href="#saladas">Recetas Saladas</a>
-                </li>
-                <li>
-                    <a href="#dulces">Recetas Dulces</a>
-                </li>
-                <li>
-                    <a href="signup.html">Sign in/Sign Up</a>
-                </li>  
-            </ul>
-        </nav>
-    </header>
-    <main id="form">
-		<form action="mailto:mail@mail.com?Subject=Contacto Nuevo" method="POST" id="form">
-			<div class="campos" >
-				Nombre y Apellido <br> <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
-			</div>
-			<div class="campos">
-				E-mail <br> <input type="mail" name="Mail" id="" placeholder="mail@mail.com" required>	
-            </div>
-            <div>
-                Password <br> <input type="password" name="Password" placeholder="Password" required>
-            </div>
-			<div class="campos">
-				Adress <br> <input type="text" name="Adress" placeholder="Adress" required>
-			</div>
-			<div class="campos">
-				Phone Number <br> <input type="tel" name="Phone Number" placeholder="+(AreaCode) 5555 5555" required>
-			</div>
-			<div id="submit">
-				<a href="index.html"><input type="submit" value="Submit"></a> 
-			</div>
-			
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ">
 
-        </form>	
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li> 
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#saladas">Recetas Saladas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dulces">Recetas Dulces</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          
+        </div>
+    </nav>
+    <main id="form">
+        <div class="container mt-4" id="signup">
+            <h4>Registrate</h4>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nombre</label>
+                        <input type="email" class="form-control" id="inputEmail4" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Apellido</label>
+                        <input type="password" class="form-control" id="inputPassword4" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" required>
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="inputAddress">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Calle y número" required>
+                </div>
+                <div class="form-group">
+                <label for="inputAddress2">Dirección 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Piso, Departamento, Lote">
+                </div>
+                <div class="form-row d-flex justify-content-between">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Codigo Postal</label>
+                    <input type="text" class="form-control" id="inputZip" required>
+                </div>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Remember Me
+                    </label>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+          </form>  
+        </div>
+		
     </main>
 </body>
 </html>

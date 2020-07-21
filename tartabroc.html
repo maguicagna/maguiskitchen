@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--BootStrap-->
+    <title> Magui's Kitchen</title>
+    
+    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Owl Carousel
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    -->
+    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png">
-    <title>Tarta de Brocoli</title>
-    <link rel="shortcut icon" href="img/faviconmagui.png" type="image/png">
 </head>
-<body class="container-fluid-lg">
-    <header id="nav-recetas">
-        <div class="logo">
-            <a href="index.html"><img src="img/maguiscrop.png" alt=""></a>
+<body>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+            </li> 
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#saladas">Recetas Saladas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dulces">Recetas Dulces</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          
         </div>
-        <nav id="main-nav">
-            <ul id="nav-list">
-                <li>
-                    <a href="index.html" class="btn">Inicio</a>
-                </li>
-                <li>
-                    <a href="index.html#saladas" class="btn">Recetas Saladas</a>
-                </li>
-                <li>
-                    <a href="index.html#dulces" class="btn">Recetas Dulces</a>
-                </li>
-                <li>
-                    <a href="signin.html" class="btn">Sign in</a>
-                </li>  
-            </ul>
-        </nav>
-    </header>
+    </nav>
     <section class="row" id="recetas">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
             <h2>Tarta de Brócoli.</h2>
             <p>Soy fan de las tartas y esta en especial por que la fui mejorando y me encanta como me sale.
             Facil, rapido y riquisima. <br>
@@ -43,14 +67,14 @@
             <div>
                 <h3>Ingredientes</h3><br>
                 <h5>Para la masa:</h4>
-                <ul>
+                <ul class="bullets">
                     <li>1 taza de harina integral.</li>
                     <li>1 cucharada sopera de aceite de oliva (o el que uses).</li>
                     <li>1 cucharadita de cafe (las chiquitas) de sal. </li>
                     <li>1/2 taza de agua.</li>
                 </ul><br>
                 <h5>Para el relleno:</h4>
-                <ul>
+                <ul class="bullets">
                     <li>1 Cebolla y 1 Cebolla colorada (o 2 de cualquiera de las dos).</li>
                     <li>1 diente de ajo.</li>
                     <li>1 Puerro.</li>
@@ -61,14 +85,14 @@
                 </ul><br>
                 <h3>Procedimiento</h3><br>
                 <h5>Para la masa:</h4>
-                <ol>
+                <ol class="bullets">
                     <li>En un bowl mezclamos la taza de harina con la sal.</li>
                     <li>Agregamos la cucharada de aceite.</li>
                     <li>Agregamos el agua, DE A POQUITO! y vamos integrando hasta formar una masa que no se pegue en las manos.</li>
                     <li>Llevamos a la heladera por 30 minutos.</li>
                 </ol><br>
                 <h5>Para el relleno:</h4>
-                <ol>
+                <ol class="bullets">
                     <li>Precalentamos el horno a 230ºC</li>
                     <li>Picamos las cebollas, el ajo y el puerro.</li>
                     <li>Calentamos una sarten con aceite y reahogamos lo que picamos. Fuego medio/bajo para evitar que se queme</li>

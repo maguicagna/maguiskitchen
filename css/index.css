@@ -1,13 +1,42 @@
-*{margin: 0;padding: 0;}
+*{margin:0; padding:0;}
+body{
+    color: rgb(105, 103, 103);
+    font-family:'Quicksand', sans-serif ;
+}
+p{
+    text-align: justify;
+}
+img{
+    margin-bottom: 6%;
+}
+#signin{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 
-/*@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);*/
+}
+#signup{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#recetas{
+    margin-top: 10px;
+    margin-left: 8px;
+    text-align: justify;
+
+}
+.bullets{
+    margin-left: 3%;
+}
+/*@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
 
 
 body{
-    /*
+    
     width: 80%;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;*
     font-family: 'Quicksand', sans-serif;
 }
 header{
@@ -50,7 +79,7 @@ header{
 
     }
     #nav-list{
-        width: 32%;
+        width: 50%;
         
         display: flex;
             
@@ -63,8 +92,8 @@ header{
         
     }
    
-    /* Escribo asi para que lo que yo le eplique a "LI" sea solo a los li dentro del nav list
-    Para que si vuelvo a trabajar con li en la pag no hereden estas caracteristicas */
+    Escribo asi para que lo que yo le eplique a "LI" sea solo a los li dentro del nav list
+    Para que si vuelvo a trabajar con li en la pag no hereden estas caracteristicas
 
     #nav-list li a{
         display: block;
@@ -117,7 +146,7 @@ section{
 #contenedor{
     margin-left: 18px;
 }
-/*
+
 #contenedor{
     width: 90%;
     margin-left: auto;
@@ -133,7 +162,7 @@ section{
 }
 
 
-/*#recetas{
+#recetas{
     width: 50%;
     
     padding-left: 1%;
@@ -142,7 +171,7 @@ section{
 
 #recetas div{
     margin-left: 2%;
-}*/
+}
 
 #recetas li{
     margin-left: 3%;
@@ -160,6 +189,7 @@ footer{
 .pie{
     background-color: #dda0dd;
 }
+*/
 /* Media Queries 
 /* XL 
 @media screen and (min-width: 1301px) {
