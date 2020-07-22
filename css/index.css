@@ -29,205 +29,54 @@ img{
 .bullets{
     margin-left: 3%;
 }
-
-/*@import url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
-
-
-body{
-    
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;*
-    font-family: 'Quicksand', sans-serif;
-}
-header{
-   background-color: rgba(255, 255, 255);
-   position: sticky;
-   top: 0%;
-
-
-}
-
-#encabezado{
-    
-    display: flex;
-        flex-wrap: wrap;
-    
-}
-
-.logo{
-    
-    padding-left: 1%;
-    box-sizing: border-box;
-    color:rgb(165, 101, 165);
-}
-
-
-
-
-#main-nav{
-    width: 100%;
-    background-color: white;
-    display: flex;
-            justify-content: flex-end;
-
-    text-align: right;
-    
-    
-    
-    
-    
-
-    }
-    #nav-list{
-        width: 50%;
-        
-        display: flex;
-            
-            
-            justify-content: space-between;
-
-        
-        list-style-type: none;
-        
-        
-    }
-   
-    Escribo asi para que lo que yo le eplique a "LI" sea solo a los li dentro del nav list
-    Para que si vuelvo a trabajar con li en la pag no hereden estas caracteristicas
-
-    #nav-list li a{
-        display: block;
-        
-        background-color: plum;
-        padding: 10px;
-        color: #800080;
-        text-align: center;
-        box-sizing: border-box;
-    
-    }
-    #nav-list li a:hover{
-        background-color: purple;
-        color: #dda1dd;
-    }
-    
-section{
-    
-    padding: 1%;
-    color: rgb(107, 99, 107);
-}
-
-#info p{
-    text-align: justify;
-    margin-top: 10px;
-}
-.back{
-    color: purple;
-
-}
-#ingreso{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#form{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nav-recetas{
+.flipcontainer{
     position: relative;
-}
-
-.recetas{
     margin-bottom: 20px;
-    justify-content: space-around;
-}
-#contenedor{
-    margin-left: 18px;
+
 }
 
-#contenedor{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    box-sizing: border-box;
+.flip-card{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover{
+    transform: rotateY(180deg);
+
+}
+
+a{
+    color: white;
+   text-decoration-style: none;
+
+}
+a:hover{
+    color: white;
     
+    text-decoration: none;
+
+}
+
+.back{
+    width: 200px;
+    height: 200px;
+    padding: 12%;
+    background-color:  rgb(136, 135, 135);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    transform: rotateY(180deg);
     display: flex;
-        flex-wrap: wrap;
+        justify-content: center; 
         align-items: center;
-        justify-content:space-between;
     
-}
-
-
-#recetas{
-    width: 50%;
-    
-    padding-left: 1%;
-    text-align: justify;
-}
-
-#recetas div{
-    margin-left: 2%;
-}
-
-#recetas li{
-    margin-left: 3%;
-}
-  
-h5{
-    text-decoration: underline;
-}
-footer{
-
-    background-color: rgb(107, 99, 107);
-    height: 100px;
-    
-}
-.pie{
-    background-color: #dda0dd;
-}
-*/
-/* Media Queries 
-/* XL 
-@media screen and (min-width: 1301px) {
 
 }
-/* Large - Desktop 
-@media screen and (min-width: 990px) and (max-width:1300px){
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+}
 
-}
-/* Medium 
-@media screen and (max-width:989px) and (min-width:580px){
-    body{
-        width:100%;
-    }
-    #contenedor{
-        width:100%;
-        padding: 1%;
-        box-sizing: border-box;
-        display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content:space-between;
-    }
-    .recetas{
-        width: 22%;
-    }
-
-}
-/* Small 
-@media screen and (max-width:579px) and (min-width:580px) {
-    #contenedor{
-        width: 100%;
-        margin-left: 0px;
-    }
-    img{
-        width:50%;
-    }
-}
-*/
 
