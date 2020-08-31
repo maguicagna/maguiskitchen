@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="container-lg container-fluid navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-around" id="navbarTogglerDemo02">
           <ul class="navbar-nav ">
 
             <li class="nav-item">
@@ -43,15 +43,15 @@
               <a class="nav-link" href="#dulces">Recetas Dulces</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link" href="contacto.php">Contacto</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="signin.html">Sign In</a>
+              <a class="nav-link" href="signin.php">Sign In</a>
             </li>
             
           </ul>
-          <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+          <form class="form-inline my-2 my-lg-0 d-flex d-lg-block  d-sm-none">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
@@ -59,9 +59,9 @@
         </div>
     </nav>
     <main id="form">
-        <div class="container mt-4" id="signup">
+        <div class="container-md container-fluid-sm mt-4" id="signup">
             <h4>Registrate</h4>
-            <form>
+            <form action="signup-post.php" method="post">
               <div class="row">
                 <div class="col-6 mb-3">
                   <label for="">Nombre</label>
@@ -119,7 +119,7 @@
                 </div>
               </div>
               <button type="submit" class="btn btn-primary" id="btnSignup">Sign up</button>
-              <small id="checkCampos"></small>
+              <p class='mt-2'  id="checkCampos"></p>
           </form>  
         </div>
 		
@@ -158,7 +158,7 @@
   //var camposForm = [nombre,apellido,email,pass1,pass2,direc1,direc2,ciudad,cp]
 
   function check(){
-    if(nombre.value==''||apellido.value==''||email.value==''||pass1.value==''||pass2.value==''||direc1.value==''||direc2.value==''||ciudad.value==''||cp.value==''){
+    if(nombre.value==''||apellido.value==''||email.value==''||pass1.value==''||pass2.value==''||direc1.value==''||ciudad.value==''||cp.value==''){
       checkCampos.innerHTML=`Todos los campos tienen que estar completos!`
 
     }
@@ -166,6 +166,31 @@
     
   }
   btnSignup.addEventListener('click',check)
+
+  function passCondicion(){
+    if (pass1.value.length < 6){
+      helpPass1.innerHTML=`La contraseña debe tener al menos 6 caracteres.`
+      pass1.style.border = '2px solid red'
+    }else{
+      pass1.style.border = '2px solid lightgreen'
+
+    }
+  }
+  pass1.addEventListener('blur',passCondicion)
+
+  function passIguales(){
+    if (pass1.value != pass2.value){
+      helpPass2.innerHTML=`Las contraseñas deben coincidir.`
+      pass2.style.border = '2px solid red'
+    }else{
+      pass2.style.border = '2px solid lightgreen'
+
+    }
+  }
+  pass2.addEventListener('blur',passIguales)
+
+
+
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

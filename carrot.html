@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo02">
+    <nav class="container-fluid navbar sticky-top navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse d-lg-flex justify-content-around" id="navbarTogglerDemo02">
           <ul class="navbar-nav ">
 
             <li class="nav-item">
@@ -45,9 +45,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#dulces">Recetas Dulces</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.php">Contacto</a>
+            </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="signin.html">Sign In</a>
+              <a class="nav-link" href="signin.php">Sign In</a>
             </li>
             
           </ul>
@@ -58,8 +61,8 @@
           
         </div>
     </nav>
-    <section class="row" id="recetas">
-        <div class="col-lg-5">
+    <section class="container-lg container-fluid row" id="recetas">
+        <div class="col-lg-5 col-sm-12">
             <h2>Carrot Cake.</h2>
             <p>Super humeda y esponjosa. Yo la hago en una pirex de 20x20.</p><br>
             <h3>Ingredientes.</h3>
@@ -89,6 +92,22 @@
             </ol>
         </div>
     </section>
+    <footer class='text-white p-5'>
+      <p id='copy'>  </p>
+    </footer>
+  
+  
+  <script>
+    //copyright 
+    let copy = document.getElementById('copy')
+    var d = new Date();
+    //console.log(fecha)
+    let anio = d.getFullYear();
+    console.log(anio)
+    copy.innerHTML =`&copy; ${anio} - Magui's Kitchen` 
+  
+  
+  </script>
     
 
     

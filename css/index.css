@@ -2,6 +2,7 @@
 body{
     color: rgb(105, 103, 103);
     font-family:'Quicksand', sans-serif ;
+    
 }
 p{
     text-align: justify;
@@ -16,7 +17,7 @@ img{
 
 }
 #signup{
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,54 +30,119 @@ img{
 .bullets{
     margin-left: 3%;
 }
-.flipcontainer{
-    position: relative;
-    margin-bottom: 20px;
+
+/* Pag de Contacto*/
+#contacto{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#caja{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(179, 105, 179);
+}
+
+
+footer{
+    background-color:rgb(136, 135, 135) ;
+}
+
+/*Media Queries */
+
+/*FlipCard XL-m */
+@media screen and (min-width:800px){
+    .titulosrec{
+        display: none;
+    }
+
+
+
+    /*Animacion flip card*/
+
+    .flipcontainer{
+        position: relative;
+        margin-bottom: 20px;
+
+    }
+
+    .flip-card{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .flip-card:hover{
+        transform: rotateY(180deg);
+
+    }
+
+    a{
+        color: white;
+    text-decoration-style: none;
+
+    }
+    a:hover{
+        color: white;
+        
+        text-decoration: none;
+
+    }
+
+    .back{
+        width: 200px;
+        height: 200px;
+        padding: 12%;
+        background-color:  rgb(136, 135, 135);
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        transform: rotateY(180deg);
+        display: flex;
+            justify-content: center; 
+            align-items: center;
+        
+
+    }
+    .front, .back{
+        position: absolute;
+        backface-visibility: hidden;
+    }
 
 }
 
-.flip-card{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-.flip-card:hover{
-    transform: rotateY(180deg);
+/* Links de Recetas de m para abajo*/
+@media screen and (max-width:799px){
 
-}
-
-a{
-    color: white;
-   text-decoration-style: none;
-
-}
-a:hover{
-    color: white;
+    .reclink{
+        display: none;
+    }
     
-    text-decoration: none;
 
 }
 
-.back{
-    width: 200px;
-    height: 200px;
-    padding: 12%;
-    background-color:  rgb(136, 135, 135);
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    transform: rotateY(180deg);
-    display: flex;
-        justify-content: center; 
-        align-items: center;
+
+/* XL*/
+@media screen and (min-width: 1301px){
+
+}
+/* Large - Desktop */
+@media screen and (min-width: 990px) and (max-width:1300px){
     
 
 }
-.front, .back{
-    position: absolute;
-    backface-visibility: hidden;
+/* Medium */
+@media screen and (max-width:989px) and (min-width:580px){
+
+}
+
+/* Small */
+@media screen and (max-width:579px) and (min-width:580px) {
+    
+    
 }
 
 

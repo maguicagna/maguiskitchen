@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="container navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <nav class="container-lg container-fluid navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="index.html"><img src="img/maguiscrop.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-around" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ">
             
             <li class="nav-item">
               <a class="nav-link" href="#info">Info</a>
@@ -42,23 +42,29 @@
             <li class="nav-item">
               <a class="nav-link" href="#dulces">Recetas Dulces</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.php">Contacto</a>
+            </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="signin.html">Sign In</a>
+              <a class="nav-link" href="signin.php">Sign In</a>
             </li>
             
           </ul>
-          <form class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+          <form class="form-inline my-2 my-lg-0 d-flex d-lg-block  d-sm-none">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
+        
+          
           
         </div>
       </nav>
-      <section class="container" id="info">
+      <section class="container-lg container-fluid" id="info">
         <h2>Info</h2>
         <div class="row justify-content-between">
-          <div class="col-5">
+          <div class="col-12 col-md-5">
             <h4>About Me</h4>
             <p class="articulo">Mi nombre es Magui, soy una modelo Argentina y programadora freelance. Me encanta comer y cocinar para mi y mi familia.
             Para mi es fundamental llevar una alimentación saludable, tanto como para mi trabajo como para la vida. Intento no consumir
@@ -66,7 +72,7 @@
             que ustedes también hagan sus comidas la mayor parte del tiempo para comer alimentos con ingredientes reales y que conocemos.
             </p>
           </div>            
-          <div class="col-5"> 
+          <div class="col-12 col-md-5"> 
             <h4>Sobre este sitio.</h4>
             <p class="articulo">Mis recetas no necesariamente son light ni bajas en calorias. Son saludables, con esto quiero decir que son de ingredientes
             reales, no industrializados, no tienen conservantes ni cosas raras. <br>
@@ -77,12 +83,12 @@
           </div>
         </div>
       </section>
-      <section class="container " id="blog">
+      <section class="container-lg container-fluid" id="blog">
         <h2>Blog</h2>
         <p>Artículos que encuentro y comparto o escribo sobre cocinar, tips y utensilios para la cocina</p>
-        <div class="row d-flex justify-content-around ">
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
+        <div class="row d-flex flex-wrap justify-content-md-around  justify-content-sm-center">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mt-2" style="width: 18rem;">
               <img src="img/reuse.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Reciclar comidas.</h5>
@@ -91,8 +97,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mt-2" style="width: 18rem;">
               <img src="img/utensilios.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Must have de utensilios.</h5>
@@ -101,8 +107,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mt-2" style="width: 18rem;">
               <img src="img/veggies (1).jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Verduras y Frutas</h5>
@@ -116,20 +122,20 @@
         <p>Para ver mas articulos hacer click <a class="btn-link " href="blog.html">aquí.</a></p>
       </section>
       <br>
-      <section class="container" id="saladas">
+      <section class="container-lg container-fluid" id="saladas">
         <h2 >Recetas Saladas</h2>
         <br>
-            <div class="row justify-content-between" id="contenedor">
+            <div class="row d-flex flex-wrap justify-content-between" id="contenedor">
                 <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer" >
+                    <h4 class="titulosrec">Tarta de Brócoli</h4>             
                     <div class="flip-card">
-                        <div class="front">
-                            <a href="tartabroc.html" ><img class="rounded" src="img/tartabroc.jpg"  alt=""></a>
-                        </div>
-                        <div class="back rounded"><a class="reclink" href="tartabroc.html">Tarta de Brócoli</a> </div>   
+                      <a href="tartabroc.html" ><img class="rounded front" src="img/tartabroc.jpg"  alt=""></a>       
+                      <div class="back rounded"><a class="reclink" href="tartabroc.html">Tarta de Brócoli</a> </div>   
                     </div>  
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Tacos</h4> 
                     <div class="flip-card">
                         <a href="tacos.html"><img class="rounded front" src="img/tacos.jpg"  alt=""></a> 
                         <div class="back rounded"> <a href="tacos.html" class="reclink">Tacos</a></div>
@@ -138,6 +144,7 @@
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Ñoquis</h4> 
                     <div class="flip-card">
                         <a href="noquis.html"><img class="rounded front" src="img/noquis.jpg"  alt=""></a> 
                         <div class="back rounded"><a href="noquis.html" class="reclink">Ñoquis</a></div>
@@ -145,6 +152,7 @@
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Sopa de mi Abuela</h4> 
                     <div class="flip-card">
                         <a href="sopa.html"><img class="rounded front" src="img/sopa.jpg"  alt=""></a> 
                         <div class="back rounded"><a href="sopa.html" class="reclink">Sopa de mi Abuela</a></div>
@@ -152,30 +160,34 @@
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Canelones</h4> 
                     <div class="flip-card">
                         <a href="#"><img class="rounded front" src="img/canelones.jpg"  alt=""></a> 
-                        <div class="back rounded">Canelones</div>
+                        <div class="back rounded reclink">Canelones</div>
                     </div>  
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Arroz con Pollo</h4> 
                     <div class="flip-card">
                         <a href="#"><img class="rounded front" src="img/arrozpollo.jpg"  alt=""></a> 
-                        <div class="back rounded">Arroz con pollo</div>
+                        <div class="back rounded reclink">Arroz con pollo</div>
                     </div>  
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Empanadas de Carne</h4> 
                     <div class="flip-card">
                         <a href="#"><img class="rounded front" src="img/empanadas.jpg"  alt=""></a> 
-                        <div class="back rounded">Empanadas de Carne</div>
+                        <div class="back rounded reclink">Empanadas de Carne</div>
                     </div>  
                 </div>
 
                 <div  class="col-lg-3 col-md-4 col-sm-6 flipcontainer ">
+                    <h4 class="titulosrec">Quinoa con Verduras</h4> 
                     <div class="flip-card">
                         <a href="#"><img class="rounded front" src="img/quinoa.jpg"  alt=""></a> 
-                        <div class="back rounded">Quinoa con verduras</div>
+                        <div class="back rounded reclink">Quinoa con verduras</div>
                     </div>  
                 </div>
                 
@@ -183,80 +195,89 @@
         
     </section>
     <br>
-    <section  class="container" id="dulces" >
+    <section  class="container-lg container-fluid" id="dulces" >
       <h2>Recetas Dulces</h2>
       <br>
-        <div class="row justify-content-around" id="contenedor">
+        <div class="row d-flex flex-wrap justify-content-between" id="contenedor">
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
+                <h4 class="titulosrec">Cookies</h4> 
                 <div class="flip-card">
-                    <div class="front">
-                        <a href="cookies.html" ><img class="rounded" src="img/cookies.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded"><a href="cookies.html" class="reclink">Cookies</a></div>   
+                    <a href="cookies.html" ><img class="rounded front" src="img/cookies.jpg"  alt=""></a>
+                    <div class="back rounded reclink "><a href="cookies.html" class="reclink">Cookies</a></div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
+                <h4 class="titulosrec">Granola</h4> 
                 <div class="flip-card">
-                    <div class="front">
-                        <a href="granola.html" ><img class="rounded" src="img/granola.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded"><a href="granola.html" class="reclink">Granola</a></div>   
+                    <a href="granola.html" ><img class="rounded front" src="img/granola.jpg"  alt=""></a>
+                    
+                    <div class="back rounded reclink"><a href="granola.html" class="reclink">Granola</a></div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
+                <h4 class="titulosrec">Barra de Chocolate</h4> 
                 <div class="flip-card">
-                    <div class="front">
-                        <a href="chocolate.html" ><img class="rounded" src="img/chocolate.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded"><a href="chocolate.html" class="reclink">Barra de Chocolate</a></div>   
+                    
+                    <a href="chocolate.html" ><img class="rounded front" src="img/chocolate.jpg"  alt=""></a>
+                    
+                    <div class="back rounded reclink"><a href="chocolate.html" class="reclink">Barra de Chocolate</a></div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
-                <div class="flip-card">
-                    <div class="front">
-                        <a href="carrot.html" ><img class="rounded" src="img/carrot.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded"> <a href="carrot.html" class="reclink">Carrot cake</a></div>   
+                <h4 class="titulosrec">Carrot Cake</h4> 
+                <div class="flip-card">                    
+                    <a href="carrot.html" ><img class="rounded front" src="img/carrot.jpg"  alt=""></a>
+                    <div class="back rounded reclink"> <a href="carrot.html" class="reclink">Carrot cake</a></div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
-                <div class="flip-card">
-                    <div class="front">
-                        <a href="#" ><img class="rounded" src="img/torrejas.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded">Torrejas de Manzana y Avena</div>   
+                <h4 class="titulosrec">Torrejas de Manzana y Avena</h4>   
+                <div class="flip-card">                    
+                    <a href="#" ><img class="rounded front"  src="img/torrejas.jpg"  alt=""></a>                    
+                    <div class="back rounded reclink">Torrejas de Manzana y Avena</div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
-                <div class="flip-card">
-                    <div class="front">
-                        <a href="#" ><img class="rounded" src="img/french.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded">French Toast</div>   
+                <h4 class="titulosrec">French Toasts</h4> 
+                <div class="flip-card">                 
+                    <a href="#" ><img class="rounded front" src="img/french.jpg"  alt=""></a>               
+                    <div class="back rounded reclink">French Toasts</div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
-                <div class="flip-card">
-                    <div class="front">
-                        <a href="#" ><img class="rounded" src="img/trufas.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded">Trufas</div>   
+                <h4 class="titulosrec">Trufas</h4> 
+                <div class="flip-card">          
+                    <a href="#" ><img class="rounded front" src="img/trufas.jpg"  alt=""></a>     
+                    <div class="back rounded reclink">Trufas</div>   
                 </div>  
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 flipcontainer">
+                <h4 class="titulosrec">Flan</h4> 
                 <div class="flip-card">
-                    <div class="front">
-                        <a href="#" ><img class="rounded" src="img/flan.jpg"  alt=""></a>
-                    </div>
-                    <div class="back rounded">Flan</div>   
+                    <a href="#" ><img class="rounded front" src="img/flan.jpg"  alt=""></a>
+                    <div class="back rounded reclink">Flan</div>   
                 </div>  
             </div>
           </div>
             
        
   </section>
+  <footer class='text-white p-5'>
+    <p id='copy'>  </p>
+  </footer>
 
-<!--Owl Carousel JS-->
+
+<script>
+  //copyright 
+  let copy = document.getElementById('copy')
+  var d = new Date();
+  //console.log(fecha)
+  let anio = d.getFullYear();
+  console.log(anio)
+  copy.innerHTML =`&copy; ${anio} - Magui's Kitchen` 
+
+
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
